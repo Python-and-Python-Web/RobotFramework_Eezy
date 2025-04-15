@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-04-15T15:51:06.487899" rpa="false" schemaversion="5">
+<suite id="s1" name="HomePage" source="C:\Programming\Python\RobotFramework\Eezy\tests\HomePage.robot">
+<test id="s1-t1" name="HomePage Should load correctly" line="15">
+<kw name="Begin Web Test" owner="CommonFeature" type="SETUP">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.35s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-04-15T15:51:07.791923" elapsed="0.000225"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-04-15T15:51:07.792290" elapsed="0.000166"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-15T15:51:07.792759" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-15T15:51:07.792581" elapsed="2.785226"/>
+</kw>
+<kw name="Set Window Position" owner="SeleniumLibrary">
+<arg>x=341</arg>
+<arg>y=169</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" start="2025-04-15T15:51:10.578128" elapsed="0.442462"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>width=1150</arg>
+<arg>height=1090</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2025-04-15T15:51:11.020904" elapsed="0.795219"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:07.791292" elapsed="4.025068"/>
+</kw>
+<kw name="Go To &quot;Home&quot; Page" owner="EezyApp">
+<kw name="Navigate To" owner="HomePage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-04-15T15:51:11.818488" level="INFO">Opening url 'https://extranet.extraajat.com/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-04-15T15:51:11.818296" elapsed="2.116181"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:11.817992" elapsed="2.116695"/>
+</kw>
+<kw name="Verify HomePage Loaded" owner="HomePage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${HOME_HEADER_LABEL}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-04-15T15:51:13.935341" elapsed="0.375300"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:13.934961" elapsed="0.375896"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:11.817524" elapsed="2.493447"/>
+</kw>
+<kw name="End Web Test" owner="CommonFeature" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-04-15T15:51:14.311944" elapsed="3.904534"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:14.311534" elapsed="3.905152"/>
+</kw>
+<doc>Verify that the HomePage loads correctly</doc>
+<tag>1001</tag>
+<status status="PASS" start="2025-04-15T15:51:07.790482" elapsed="10.435446"/>
+</test>
+<test id="s1-t2" name="Confirm HomePage Header Paragraph is loaded" line="20">
+<kw name="Begin Web Test" owner="CommonFeature" type="SETUP">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.35s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-04-15T15:51:18.233085" elapsed="0.000226"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-04-15T15:51:18.233428" elapsed="0.000144"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-15T15:51:18.233868" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-15T15:51:18.233693" elapsed="2.842689"/>
+</kw>
+<kw name="Set Window Position" owner="SeleniumLibrary">
+<arg>x=341</arg>
+<arg>y=169</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" start="2025-04-15T15:51:21.076725" elapsed="0.380177"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>width=1150</arg>
+<arg>height=1090</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2025-04-15T15:51:21.457168" elapsed="0.708141"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:18.232723" elapsed="3.932850"/>
+</kw>
+<kw name="Verify HomePage Header Paragraph is loaded" owner="EezyApp">
+<kw name="Navigate To" owner="HomePage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-04-15T15:51:22.167541" level="INFO">Opening url 'https://extranet.extraajat.com/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-04-15T15:51:22.167333" elapsed="0.906479"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:22.167015" elapsed="0.906965"/>
+</kw>
+<kw name="Verify HomePage header paragraph is loaded" owner="HomePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${HEADER_PARAGRAPH}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-15T15:51:23.074540" elapsed="4.842433"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:23.074222" elapsed="4.842919"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:22.166552" elapsed="5.750662"/>
+</kw>
+<kw name="End Web Test" owner="CommonFeature" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-04-15T15:51:27.917930" elapsed="2.588328"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:27.917644" elapsed="2.588806"/>
+</kw>
+<doc>Verify that the HomePage header paragraph is loaded</doc>
+<tag>1002</tag>
+<status status="PASS" start="2025-04-15T15:51:18.231987" elapsed="12.274681"/>
+</test>
+<test id="s1-t3" name="Confirm Full CompanyName should be visible" line="25">
+<kw name="Begin Web Test" owner="CommonFeature" type="SETUP">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.35s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-04-15T15:51:30.508227" elapsed="0.000190"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-04-15T15:51:30.508522" elapsed="0.000130"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-15T15:51:30.508940" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-15T15:51:30.508773" elapsed="2.753844"/>
+</kw>
+<kw name="Set Window Position" owner="SeleniumLibrary">
+<arg>x=341</arg>
+<arg>y=169</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" start="2025-04-15T15:51:33.262951" elapsed="0.382770"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>width=1150</arg>
+<arg>height=1090</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2025-04-15T15:51:33.646009" elapsed="0.712828"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:30.507973" elapsed="3.851046"/>
+</kw>
+<kw name="Verify Company Name is loaded" owner="EezyApp">
+<kw name="Navigate To" owner="HomePage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-04-15T15:51:34.360163" level="INFO">Opening url 'https://extranet.extraajat.com/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-04-15T15:51:34.360003" elapsed="0.918115"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:34.359777" elapsed="0.918518"/>
+</kw>
+<kw name="Full CompanyName should be visible" owner="HomePage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${COMPANY_NAME}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-04-15T15:51:35.278893" elapsed="0.365695"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:35.278548" elapsed="0.366231"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:34.359454" elapsed="1.285417"/>
+</kw>
+<kw name="End Web Test" owner="CommonFeature" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-04-15T15:51:35.645725" elapsed="2.528021"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:35.645341" elapsed="2.528579"/>
+</kw>
+<doc>Verify that the full company name is visible</doc>
+<tag>1003</tag>
+<status status="PASS" start="2025-04-15T15:51:30.507457" elapsed="7.666668"/>
+</test>
+<test id="s1-t4" name="Confirm Business ID should be visible" line="30">
+<kw name="Begin Web Test" owner="CommonFeature" type="SETUP">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.35s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-04-15T15:51:38.175859" elapsed="0.000239"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-04-15T15:51:38.176248" elapsed="0.000183"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-15T15:51:38.176827" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-15T15:51:38.176606" elapsed="2.778725"/>
+</kw>
+<kw name="Set Window Position" owner="SeleniumLibrary">
+<arg>x=341</arg>
+<arg>y=169</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" start="2025-04-15T15:51:40.955694" elapsed="0.389156"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>width=1150</arg>
+<arg>height=1090</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2025-04-15T15:51:41.345132" elapsed="0.716806"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:38.175541" elapsed="3.886638"/>
+</kw>
+<kw name="Verify Business ID is loaded" owner="EezyApp">
+<kw name="Navigate To" owner="HomePage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-04-15T15:51:42.063529" level="INFO">Opening url 'https://extranet.extraajat.com/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-04-15T15:51:42.063375" elapsed="0.978318"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:42.063112" elapsed="0.978747"/>
+</kw>
+<kw name="BusinessID Should be visible" owner="HomePage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${BUSINESS_ID_FOOTER}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-04-15T15:51:43.042397" elapsed="0.362351"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:43.042090" elapsed="0.362866"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:42.062696" elapsed="1.342339"/>
+</kw>
+<kw name="End Web Test" owner="CommonFeature" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-04-15T15:51:43.405718" elapsed="2.544161"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:43.405447" elapsed="2.544584"/>
+</kw>
+<doc>Verify that the business ID is visible</doc>
+<tag>1004</tag>
+<status status="PASS" start="2025-04-15T15:51:38.174897" elapsed="7.775315"/>
+</test>
+<test id="s1-t5" name="Confirm Online Billing Address should be visible" line="35">
+<kw name="Begin Web Test" owner="CommonFeature" type="SETUP">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.35s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-04-15T15:51:45.951726" elapsed="0.000179"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-04-15T15:51:45.952006" elapsed="0.000128"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-15T15:51:45.952401" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-15T15:51:45.952247" elapsed="2.659977"/>
+</kw>
+<kw name="Set Window Position" owner="SeleniumLibrary">
+<arg>x=341</arg>
+<arg>y=169</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" start="2025-04-15T15:51:48.612504" elapsed="0.408277"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>width=1150</arg>
+<arg>height=1090</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2025-04-15T15:51:49.021056" elapsed="0.717847"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:45.951480" elapsed="3.787594"/>
+</kw>
+<kw name="Verify Online Billing Address is loaded" owner="EezyApp">
+<kw name="Navigate To" owner="HomePage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-04-15T15:51:49.740027" level="INFO">Opening url 'https://extranet.extraajat.com/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-04-15T15:51:49.739900" elapsed="0.900563"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:49.739710" elapsed="0.900917"/>
+</kw>
+<kw name="Online Billing Address Should be visible" owner="HomePage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${ONLINE_BILLING_ADDRESS}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-04-15T15:51:50.641124" elapsed="0.361976"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:50.640862" elapsed="0.362385"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:49.739433" elapsed="1.263873"/>
+</kw>
+<kw name="End Web Test" owner="CommonFeature" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-04-15T15:51:51.003954" elapsed="2.533459"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:51.003682" elapsed="2.533872"/>
+</kw>
+<doc>Verify that the online billing address is visible</doc>
+<tag>1005</tag>
+<status status="PASS" start="2025-04-15T15:51:45.950903" elapsed="7.586830"/>
+</test>
+<test id="s1-t6" name="Confirm Online Billing Operator should be visible" line="40">
+<kw name="Begin Web Test" owner="CommonFeature" type="SETUP">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.35s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-04-15T15:51:53.539177" elapsed="0.000185"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-04-15T15:51:53.539463" elapsed="0.000135"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-15T15:51:53.539866" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-15T15:51:53.539710" elapsed="2.588235"/>
+</kw>
+<kw name="Set Window Position" owner="SeleniumLibrary">
+<arg>x=341</arg>
+<arg>y=169</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" start="2025-04-15T15:51:56.128390" elapsed="0.378364"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>width=1150</arg>
+<arg>height=1090</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2025-04-15T15:51:56.507006" elapsed="0.724852"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:53.538947" elapsed="3.693110"/>
+</kw>
+<kw name="Verify Online Billing Operator is loaded" owner="EezyApp">
+<kw name="Navigate To" owner="HomePage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-04-15T15:51:57.233237" level="INFO">Opening url 'https://extranet.extraajat.com/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-04-15T15:51:57.233079" elapsed="0.953680"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:57.232843" elapsed="0.954083"/>
+</kw>
+<kw name="Online Billing Operator Should be visible" owner="HomePage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${ONLINE_BILLING_OPERATOR}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-04-15T15:51:58.187481" elapsed="0.361249"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:58.187172" elapsed="0.361731"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:57.232490" elapsed="1.316494"/>
+</kw>
+<kw name="End Web Test" owner="CommonFeature" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-04-15T15:51:58.549715" elapsed="2.535488"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:51:58.549409" elapsed="2.535959"/>
+</kw>
+<doc>Verify that the online billing operator is visible</doc>
+<tag>1006</tag>
+<status status="PASS" start="2025-04-15T15:51:53.538448" elapsed="7.547114"/>
+</test>
+<test id="s1-t7" name="Confirm Online Billing ID should be visible" line="45">
+<kw name="Begin Web Test" owner="CommonFeature" type="SETUP">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.35s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-04-15T15:52:01.087568" elapsed="0.000274"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-04-15T15:52:01.088007" elapsed="0.000226"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-15T15:52:01.088693" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-15T15:52:01.088439" elapsed="2.575647"/>
+</kw>
+<kw name="Set Window Position" owner="SeleniumLibrary">
+<arg>x=341</arg>
+<arg>y=169</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" start="2025-04-15T15:52:03.664410" elapsed="0.382603"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>width=1150</arg>
+<arg>height=1090</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2025-04-15T15:52:04.047392" elapsed="0.732992"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:52:01.087201" elapsed="3.693348"/>
+</kw>
+<kw name="Verify Online Billing ID is loaded" owner="EezyApp">
+<kw name="Navigate To" owner="HomePage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-04-15T15:52:04.781591" level="INFO">Opening url 'https://extranet.extraajat.com/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-04-15T15:52:04.781461" elapsed="1.097152"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:52:04.781269" elapsed="1.097509"/>
+</kw>
+<kw name="Online Billing ID Should be visible" owner="HomePage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${ONLINE_BILLING_ID}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-04-15T15:52:05.879338" elapsed="16.912313"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:52:05.879027" elapsed="16.912789"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:52:04.780945" elapsed="18.010949"/>
+</kw>
+<kw name="End Web Test" owner="CommonFeature" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-04-15T15:52:22.792563" elapsed="2.531558"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:52:22.792284" elapsed="2.531996"/>
+</kw>
+<doc>Verify that the online billing ID is visible</doc>
+<tag>1007</tag>
+<status status="PASS" start="2025-04-15T15:52:01.086224" elapsed="24.238531"/>
+</test>
+<test id="s1-t8" name="Confirm Company Postal Address should be visible" line="50">
+<kw name="Begin Web Test" owner="CommonFeature" type="SETUP">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.35s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-04-15T15:52:25.326637" elapsed="0.000215"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-04-15T15:52:25.326988" elapsed="0.000158"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-15T15:52:25.327474" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-15T15:52:25.327288" elapsed="2.590353"/>
+</kw>
+<kw name="Set Window Position" owner="SeleniumLibrary">
+<arg>x=341</arg>
+<arg>y=169</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" start="2025-04-15T15:52:27.917909" elapsed="0.383860"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>width=1150</arg>
+<arg>height=1090</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2025-04-15T15:52:28.302067" elapsed="0.717231"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:52:25.326348" elapsed="3.693116"/>
+</kw>
+<kw name="Verify Company Postal Address is loaded" owner="EezyApp">
+<kw name="Navigate To" owner="HomePage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-04-15T15:52:29.020456" level="INFO">Opening url 'https://extranet.extraajat.com/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-04-15T15:52:29.020323" elapsed="0.989532"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:52:29.020131" elapsed="0.989878"/>
+</kw>
+<kw name="Company Postal Address Should be visible" owner="HomePage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${COMPANY_POSTAL_ADDRESS}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-04-15T15:52:30.010545" elapsed="0.361546"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:52:30.010238" elapsed="0.362023"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:52:29.019855" elapsed="1.352484"/>
+</kw>
+<kw name="End Web Test" owner="CommonFeature" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-04-15T15:52:30.373116" elapsed="3.559815"/>
+</kw>
+<status status="PASS" start="2025-04-15T15:52:30.372781" elapsed="3.560412"/>
+</kw>
+<doc>Verify that the company postal address is visible</doc>
+<tag>1008</tag>
+<status status="PASS" start="2025-04-15T15:52:25.325757" elapsed="8.607920"/>
+</test>
+<doc>HomePage Testing Scenarios</doc>
+<status status="PASS" start="2025-04-15T15:51:06.490305" elapsed="87.444757"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">1001</stat>
+<stat pass="1" fail="0" skip="0">1002</stat>
+<stat pass="1" fail="0" skip="0">1003</stat>
+<stat pass="1" fail="0" skip="0">1004</stat>
+<stat pass="1" fail="0" skip="0">1005</stat>
+<stat pass="1" fail="0" skip="0">1006</stat>
+<stat pass="1" fail="0" skip="0">1007</stat>
+<stat pass="1" fail="0" skip="0">1008</stat>
+</tag>
+<suite>
+<stat name="HomePage" id="s1" pass="8" fail="0" skip="0">HomePage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
