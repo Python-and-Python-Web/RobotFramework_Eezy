@@ -13,9 +13,8 @@ ${ONLINE_BILLING_ID} =                      E204503
 ${COMPANY_POSTAL_ADDRESS} =                 PL53645, 00063 LASKUNET
 
 
-
 *** Keywords ***
-Navigate To
+Navigate To Eezy Website
     go to                       ${URL}
 
 Verify HomePage Loaded
