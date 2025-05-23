@@ -28,7 +28,6 @@ Verify Online Billing Address is loaded
     HomePage.Navigate To Eezy Website
     HomePage.Online Billing Address Should be visible
 
-
 Verify Online Billing Operator is loaded
     HomePage.Navigate To Eezy Website
     HomePage.Online Billing Operator Should be visible
@@ -41,9 +40,22 @@ Verify Company Postal Address is loaded
     HomePage.Navigate To Eezy Website
     HomePage.Company Postal Address Should be visible
 
-
 Login With Valid Credentials
    [Arguments]    ${Username}     ${Password}
    LoginProcess.Login With Valid Credentials    ${Username}     ${Password}
    EmployeePage.Verify Employee Username Loaded
 
+Login Without Username
+    [Arguments]    ${Password}
+    LoginProcess.Leave Username Field Empty And Fill Password    ${Password}
+
+Login Without Password
+    [Arguments]    ${Username}
+    LoginProcess.Leave Password Field Empty And Fill Username    ${Username}
+
+Leave both Passwrod and Username Empty
+    LoginProcess.Leave both Passwrod and Username Empty
+
+Login With InValid Credentials
+    [Arguments]    ${Username}     ${Password}
+    LoginProcess.Login With InValid Credentials    ${Username}     ${Password}
