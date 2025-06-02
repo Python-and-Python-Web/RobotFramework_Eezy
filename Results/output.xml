@@ -1,506 +1,812 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-05-23T11:40:47.436188" rpa="false" schemaversion="5">
-<suite id="s1" name="LoginProcess" source="C:\Programming\Python\RobotFramework\Eezy\tests\LoginProcess.robot">
-<test id="s1-t1" name="Should be able to Login with valid credentials" line="19">
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-06-02T16:12:23.061301" rpa="false" schemaversion="5">
+<suite id="s1" name="Header" source="C:\Programming\Python\RobotFramework\Eezy\tests\EmployeePage\Header.robot">
+<test id="s1-t1" name="Verify that Employee Full Name is loaded" line="17">
 <kw name="Begin Web Test" owner="CommonFeature" type="SETUP">
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>.35s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-05-23T11:40:48.724191" elapsed="0.000233"/>
+<status status="PASS" start="2025-06-02T16:12:24.359544" elapsed="0.000229"/>
 </kw>
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
 <arg>10s</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2025-05-23T11:40:48.724570" elapsed="0.000173"/>
+<status status="PASS" start="2025-06-02T16:12:24.359919" elapsed="0.000165"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:40:48.725040" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg time="2025-06-02T16:12:24.360393" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-23T11:40:48.724869" elapsed="2.829778"/>
+<status status="PASS" start="2025-06-02T16:12:24.360218" elapsed="2.600946"/>
 </kw>
 <kw name="Set Window Position" owner="SeleniumLibrary">
 <arg>x=341</arg>
-<arg>y=169</arg>
+<arg>y=75</arg>
 <doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
-<status status="PASS" start="2025-05-23T11:40:51.554957" elapsed="0.387753"/>
+<status status="PASS" start="2025-06-02T16:12:26.961485" elapsed="0.391952"/>
 </kw>
 <kw name="Set Window Size" owner="SeleniumLibrary">
 <arg>width=1150</arg>
-<arg>height=1090</arg>
+<arg>height=910</arg>
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" start="2025-05-23T11:40:51.943005" elapsed="0.400037"/>
+<status status="PASS" start="2025-06-02T16:12:27.353785" elapsed="0.392651"/>
 </kw>
-<status status="PASS" start="2025-05-23T11:40:48.723256" elapsed="3.620045"/>
+<status status="PASS" start="2025-06-02T16:12:24.358910" elapsed="3.387739"/>
 </kw>
 <kw name="Go To &quot;Home&quot; Page" owner="EezyApp">
 <kw name="Navigate To Eezy Website" owner="HomePage">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:40:52.344425" level="INFO">Opening url 'https://extranet.extraajat.com/'</msg>
+<msg time="2025-06-02T16:12:27.748083" level="INFO">Opening url 'https://extranet.extraajat.com/'</msg>
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-23T11:40:52.344289" elapsed="0.938767"/>
+<status status="PASS" start="2025-06-02T16:12:27.747899" elapsed="0.586346"/>
 </kw>
-<status status="PASS" start="2025-05-23T11:40:52.344082" elapsed="0.939179"/>
+<status status="PASS" start="2025-06-02T16:12:27.747610" elapsed="0.586829"/>
 </kw>
 <kw name="Verify HomePage Loaded" owner="HomePage">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>${HOME_HEADER_LABEL}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-05-23T11:40:53.283766" elapsed="0.364985"/>
+<status status="PASS" start="2025-06-02T16:12:28.335442" elapsed="0.413995"/>
 </kw>
-<status status="PASS" start="2025-05-23T11:40:53.283492" elapsed="0.365431"/>
+<status status="PASS" start="2025-06-02T16:12:28.334707" elapsed="0.414927"/>
 </kw>
-<status status="PASS" start="2025-05-23T11:40:52.343767" elapsed="1.305234"/>
+<status status="PASS" start="2025-06-02T16:12:27.747156" elapsed="1.002580"/>
 </kw>
 <kw name="Login With Valid Credentials" owner="EezyApp">
 <kw name="Login With Valid Credentials" owner="LoginProcess">
 <kw name="Fill &quot;Username&quot; Field" owner="LoginProcess">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:40:53.650599" level="INFO">Typing text 'emp_46409' into text field 'name=_username'.</msg>
+<msg time="2025-06-02T16:12:28.751947" level="INFO">Typing text 'emp_46409' into text field 'name=_username'.</msg>
 <arg>${SIGNIN_USERNAME_TEXTBOX}</arg>
 <arg>${Username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-23T11:40:53.650242" elapsed="1.238866"/>
+<status status="PASS" start="2025-06-02T16:12:28.751463" elapsed="1.169483"/>
 </kw>
 <arg>${Username}</arg>
-<status status="PASS" start="2025-05-23T11:40:53.650010" elapsed="1.239318"/>
+<status status="PASS" start="2025-06-02T16:12:28.751129" elapsed="1.170050"/>
 </kw>
 <kw name="Fill &quot;Password&quot; Field" owner="LoginProcess">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:40:54.890201" level="INFO">Typing text 'zoya1234' into text field 'id=password'.</msg>
+<msg time="2025-06-02T16:12:29.922300" level="INFO">Typing text 'zoya1234' into text field 'id=password'.</msg>
 <arg>${SIGNIN_PASSWORD_TEXTBOX}</arg>
 <arg>${Password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-23T11:40:54.889962" elapsed="1.149215"/>
+<status status="PASS" start="2025-06-02T16:12:29.921968" elapsed="1.156868"/>
 </kw>
 <arg>${Password}</arg>
-<status status="PASS" start="2025-05-23T11:40:54.889585" elapsed="1.149784"/>
+<status status="PASS" start="2025-06-02T16:12:29.921472" elapsed="1.157597"/>
 </kw>
 <kw name="Click &quot;Login&quot; Button" owner="LoginProcess">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:40:56.040264" level="INFO">Clicking button 'name=login'.</msg>
+<msg time="2025-06-02T16:12:31.079796" level="INFO">Clicking button 'name=login'.</msg>
 <arg>${SIGNIN_SUBMIT_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-23T11:40:56.039989" elapsed="1.831418"/>
+<status status="PASS" start="2025-06-02T16:12:31.079595" elapsed="1.832266"/>
 </kw>
-<status status="PASS" start="2025-05-23T11:40:56.039620" elapsed="1.831977"/>
+<status status="PASS" start="2025-06-02T16:12:31.079302" elapsed="1.832707"/>
 </kw>
 <arg>${Username}</arg>
 <arg>${Password}</arg>
-<status status="PASS" start="2025-05-23T11:40:53.649741" elapsed="4.221936"/>
+<status status="PASS" start="2025-06-02T16:12:28.750725" elapsed="4.161348"/>
 </kw>
-<kw name="Verify Employee Username Loaded" owner="EmployeePage">
+<kw name="Verify Employee Username Loaded" owner="Header">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>${EMPLOYEE_USERNAME}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-05-23T11:40:57.872243" elapsed="1.114637"/>
+<status status="PASS" start="2025-06-02T16:12:32.912545" elapsed="1.033051"/>
 </kw>
-<status status="PASS" start="2025-05-23T11:40:57.871926" elapsed="1.115122"/>
+<status status="PASS" start="2025-06-02T16:12:32.912278" elapsed="1.033554"/>
 </kw>
 <arg>${VALID_USERNAME}</arg>
 <arg>${VALID_PASSWORD}</arg>
-<status status="PASS" start="2025-05-23T11:40:53.649359" elapsed="5.337765"/>
+<status status="PASS" start="2025-06-02T16:12:28.750179" elapsed="5.195734"/>
 </kw>
 <kw name="End Web Test" owner="CommonFeature" type="TEARDOWN">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-05-23T11:40:58.987914" elapsed="2.588090"/>
+<status status="PASS" start="2025-06-02T16:12:33.946607" elapsed="2.605425"/>
 </kw>
-<status status="PASS" start="2025-05-23T11:40:58.987583" elapsed="2.588567"/>
+<status status="PASS" start="2025-06-02T16:12:33.946322" elapsed="2.605880"/>
 </kw>
-<doc>Testing: Should be able to Login with valid credentials</doc>
+<doc>Testing: Verify Employee Full Name is loaded</doc>
 <tag>1001 Smoke Login</tag>
-<status status="PASS" start="2025-05-23T11:40:48.722426" elapsed="12.853897"/>
+<status status="PASS" start="2025-06-02T16:12:24.358060" elapsed="12.201303"/>
 </test>
-<test id="s1-t2" name="Should Not Be Able To Login Without Username" line="25">
+<test id="s1-t2" name="Verify Logo Link Redirection" line="23">
 <kw name="Begin Web Test" owner="CommonFeature" type="SETUP">
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>.35s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-05-23T11:41:01.577880" elapsed="0.000183"/>
+<status status="PASS" start="2025-06-02T16:12:36.563500" elapsed="0.000245"/>
 </kw>
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
 <arg>10s</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2025-05-23T11:41:01.578168" elapsed="0.000134"/>
+<status status="PASS" start="2025-06-02T16:12:36.563928" elapsed="0.000181"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:41:01.578569" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<msg time="2025-06-02T16:12:36.564487" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
 <arg>about:blank</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-23T11:41:01.578414" elapsed="2.590442"/>
+<status status="PASS" start="2025-06-02T16:12:36.564278" elapsed="2.644249"/>
 </kw>
 <kw name="Set Window Position" owner="SeleniumLibrary">
 <arg>x=341</arg>
-<arg>y=169</arg>
+<arg>y=75</arg>
 <doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
-<status status="PASS" start="2025-05-23T11:41:04.169162" elapsed="0.381411"/>
+<status status="PASS" start="2025-06-02T16:12:39.208819" elapsed="0.391571"/>
 </kw>
 <kw name="Set Window Size" owner="SeleniumLibrary">
 <arg>width=1150</arg>
-<arg>height=1090</arg>
+<arg>height=910</arg>
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" start="2025-05-23T11:41:04.550875" elapsed="0.394538"/>
+<status status="PASS" start="2025-06-02T16:12:39.600716" elapsed="0.390502"/>
 </kw>
-<status status="PASS" start="2025-05-23T11:41:01.577617" elapsed="3.368023"/>
+<status status="PASS" start="2025-06-02T16:12:36.563184" elapsed="3.428228"/>
 </kw>
 <kw name="Go To &quot;Home&quot; Page" owner="EezyApp">
 <kw name="Navigate To Eezy Website" owner="HomePage">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:41:04.947431" level="INFO">Opening url 'https://extranet.extraajat.com/'</msg>
+<msg time="2025-06-02T16:12:39.992533" level="INFO">Opening url 'https://extranet.extraajat.com/'</msg>
 <arg>${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-23T11:41:04.947241" elapsed="0.926496"/>
+<status status="PASS" start="2025-06-02T16:12:39.992401" elapsed="0.927010"/>
 </kw>
-<status status="PASS" start="2025-05-23T11:41:04.946937" elapsed="0.926942"/>
+<status status="PASS" start="2025-06-02T16:12:39.992148" elapsed="0.927448"/>
 </kw>
 <kw name="Verify HomePage Loaded" owner="HomePage">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>${HOME_HEADER_LABEL}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-05-23T11:41:05.874348" elapsed="0.364271"/>
+<status status="PASS" start="2025-06-02T16:12:40.920151" elapsed="0.367466"/>
 </kw>
-<status status="PASS" start="2025-05-23T11:41:05.874084" elapsed="0.364706"/>
+<status status="PASS" start="2025-06-02T16:12:40.919850" elapsed="0.367960"/>
 </kw>
-<status status="PASS" start="2025-05-23T11:41:04.946546" elapsed="1.292505"/>
+<status status="PASS" start="2025-06-02T16:12:39.991817" elapsed="1.296089"/>
 </kw>
-<kw name="Login Without Username" owner="EezyApp">
-<kw name="Leave Username Field Empty And Fill Password" owner="LoginProcess">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:41:06.240419" level="INFO">Typing text 'zoya1234' into text field 'id=password'.</msg>
-<arg>${SIGNIN_PASSWORD_TEXTBOX}</arg>
-<arg>${Password}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-23T11:41:06.240172" elapsed="1.217579"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:41:07.458298" level="INFO">Clicking button 'name=login'.</msg>
-<arg>${SIGNIN_SUBMIT_BUTTON}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-23T11:41:07.458010" elapsed="1.828967"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${SIGNIN_ERROR_MESSAGE_1}</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-05-23T11:41:09.287208" elapsed="0.360982"/>
-</kw>
-<arg>${Password}</arg>
-<status status="PASS" start="2025-05-23T11:41:06.239828" elapsed="3.408560"/>
-</kw>
-<arg>${VALID_PASSWORD}</arg>
-<status status="PASS" start="2025-05-23T11:41:06.239426" elapsed="3.409062"/>
-</kw>
-<kw name="End Web Test" owner="CommonFeature" type="TEARDOWN">
-<kw name="Close All Browsers" owner="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-05-23T11:41:09.649529" elapsed="2.588734"/>
-</kw>
-<status status="PASS" start="2025-05-23T11:41:09.649118" elapsed="2.589308"/>
-</kw>
-<doc>Testing: Should not be able to login without username</doc>
-<tag>1002 Negative Login Username missing</tag>
-<status status="PASS" start="2025-05-23T11:41:01.576989" elapsed="10.661620"/>
-</test>
-<test id="s1-t3" name="Should Not Be Able To Login Without Password" line="31">
-<kw name="Begin Web Test" owner="CommonFeature" type="SETUP">
-<kw name="Set Selenium Speed" owner="SeleniumLibrary">
-<arg>.35s</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-05-23T11:41:12.240371" elapsed="0.000246"/>
-</kw>
-<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
-<arg>10s</arg>
-<doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2025-05-23T11:41:12.240727" elapsed="0.000143"/>
-</kw>
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:41:12.241170" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<arg>about:blank</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-23T11:41:12.240986" elapsed="2.933508"/>
-</kw>
-<kw name="Set Window Position" owner="SeleniumLibrary">
-<arg>x=341</arg>
-<arg>y=169</arg>
-<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
-<status status="PASS" start="2025-05-23T11:41:15.174800" elapsed="0.383991"/>
-</kw>
-<kw name="Set Window Size" owner="SeleniumLibrary">
-<arg>width=1150</arg>
-<arg>height=1090</arg>
-<doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" start="2025-05-23T11:41:15.559057" elapsed="0.393228"/>
-</kw>
-<status status="PASS" start="2025-05-23T11:41:12.240125" elapsed="3.712377"/>
-</kw>
-<kw name="Go To &quot;Home&quot; Page" owner="EezyApp">
-<kw name="Navigate To Eezy Website" owner="HomePage">
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:41:15.953470" level="INFO">Opening url 'https://extranet.extraajat.com/'</msg>
-<arg>${URL}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-23T11:41:15.953338" elapsed="0.948289"/>
-</kw>
-<status status="PASS" start="2025-05-23T11:41:15.953145" elapsed="0.948687"/>
-</kw>
-<kw name="Verify HomePage Loaded" owner="HomePage">
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${HOME_HEADER_LABEL}</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-05-23T11:41:16.902324" elapsed="0.363432"/>
-</kw>
-<status status="PASS" start="2025-05-23T11:41:16.902055" elapsed="0.363847"/>
-</kw>
-<status status="PASS" start="2025-05-23T11:41:15.952871" elapsed="1.313091"/>
-</kw>
-<kw name="Login Without Password" owner="EezyApp">
-<kw name="Leave Password Field Empty And Fill Username" owner="LoginProcess">
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:41:17.267412" level="INFO">Typing text 'emp_46409' into text field 'name=_username'.</msg>
-<arg>${SIGNIN_USERNAME_TEXTBOX}</arg>
-<arg>${Username}</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-23T11:41:17.267106" elapsed="1.266300"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:41:18.533956" level="INFO">Clicking button 'name=login'.</msg>
-<arg>${SIGNIN_SUBMIT_BUTTON}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-23T11:41:18.533662" elapsed="1.831404"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${SIGNIN_ERROR_MESSAGE_2}</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-05-23T11:41:20.365298" elapsed="0.361087"/>
-</kw>
-<arg>${Username}</arg>
-<status status="PASS" start="2025-05-23T11:41:17.266768" elapsed="3.459819"/>
-</kw>
-<arg>${VALID_USERNAME}</arg>
-<status status="PASS" start="2025-05-23T11:41:17.266270" elapsed="3.460406"/>
-</kw>
-<kw name="End Web Test" owner="CommonFeature" type="TEARDOWN">
-<kw name="Close All Browsers" owner="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-05-23T11:41:20.727325" elapsed="2.646166"/>
-</kw>
-<status status="PASS" start="2025-05-23T11:41:20.727054" elapsed="2.646573"/>
-</kw>
-<doc>Testing: Should not be able to login without password</doc>
-<tag>1003 Negative Login Password missing</tag>
-<status status="PASS" start="2025-05-23T11:41:12.239603" elapsed="11.134191"/>
-</test>
-<test id="s1-t4" name="Leave both Passwrod and Username Empty" line="37">
-<kw name="Begin Web Test" owner="CommonFeature" type="SETUP">
-<kw name="Set Selenium Speed" owner="SeleniumLibrary">
-<arg>.35s</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-05-23T11:41:23.375360" elapsed="0.000187"/>
-</kw>
-<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
-<arg>10s</arg>
-<doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2025-05-23T11:41:23.375652" elapsed="0.000134"/>
-</kw>
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:41:23.376070" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<arg>about:blank</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-23T11:41:23.375913" elapsed="2.456249"/>
-</kw>
-<kw name="Set Window Position" owner="SeleniumLibrary">
-<arg>x=341</arg>
-<arg>y=169</arg>
-<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
-<status status="PASS" start="2025-05-23T11:41:25.832457" elapsed="0.389810"/>
-</kw>
-<kw name="Set Window Size" owner="SeleniumLibrary">
-<arg>width=1150</arg>
-<arg>height=1090</arg>
-<doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" start="2025-05-23T11:41:26.222518" elapsed="0.391187"/>
-</kw>
-<status status="PASS" start="2025-05-23T11:41:23.375108" elapsed="3.238771"/>
-</kw>
-<kw name="Go To &quot;Home&quot; Page" owner="EezyApp">
-<kw name="Navigate To Eezy Website" owner="HomePage">
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:41:26.614965" level="INFO">Opening url 'https://extranet.extraajat.com/'</msg>
-<arg>${URL}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-23T11:41:26.614825" elapsed="0.912604"/>
-</kw>
-<status status="PASS" start="2025-05-23T11:41:26.614621" elapsed="0.912957"/>
-</kw>
-<kw name="Verify HomePage Loaded" owner="HomePage">
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${HOME_HEADER_LABEL}</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-05-23T11:41:27.528062" elapsed="0.365752"/>
-</kw>
-<status status="PASS" start="2025-05-23T11:41:27.527793" elapsed="0.366186"/>
-</kw>
-<status status="PASS" start="2025-05-23T11:41:26.614297" elapsed="1.279755"/>
-</kw>
-<kw name="Leave both Passwrod and Username Empty" owner="EezyApp">
-<kw name="Leave both Passwrod and Username Empty" owner="LoginProcess">
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:41:27.895170" level="INFO">Clicking button 'name=login'.</msg>
-<arg>${SIGNIN_SUBMIT_BUTTON}</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-23T11:41:27.894981" elapsed="10.087819"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${SIGNIN_ERROR_MESSAGE_1}</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-05-23T11:41:37.983106" elapsed="0.371005"/>
-</kw>
-<status status="PASS" start="2025-05-23T11:41:27.894755" elapsed="10.459576"/>
-</kw>
-<status status="PASS" start="2025-05-23T11:41:27.894429" elapsed="10.460009"/>
-</kw>
-<kw name="End Web Test" owner="CommonFeature" type="TEARDOWN">
-<kw name="Close All Browsers" owner="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-05-23T11:41:38.360449" elapsed="2.718661"/>
-</kw>
-<status status="PASS" start="2025-05-23T11:41:38.359979" elapsed="2.719274"/>
-</kw>
-<doc>Testing: Leave both Passwrod and Username Empty</doc>
-<tag>1004 Both Password and Usermname are empty</tag>
-<status status="PASS" start="2025-05-23T11:41:23.374457" elapsed="17.704965"/>
-</test>
-<test id="s1-t5" name="Should Not Be Able To Login With Invalid Credentials" line="43">
-<kw name="Begin Web Test" owner="CommonFeature" type="SETUP">
-<kw name="Set Selenium Speed" owner="SeleniumLibrary">
-<arg>.35s</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2025-05-23T11:41:41.081612" elapsed="0.000301"/>
-</kw>
-<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
-<arg>10s</arg>
-<doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2025-05-23T11:41:41.082142" elapsed="0.000206"/>
-</kw>
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:41:41.082662" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<arg>about:blank</arg>
-<arg>${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-05-23T11:41:41.082494" elapsed="2.723984"/>
-</kw>
-<kw name="Set Window Position" owner="SeleniumLibrary">
-<arg>x=341</arg>
-<arg>y=169</arg>
-<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
-<status status="PASS" start="2025-05-23T11:41:43.806783" elapsed="0.381322"/>
-</kw>
-<kw name="Set Window Size" owner="SeleniumLibrary">
-<arg>width=1150</arg>
-<arg>height=1090</arg>
-<doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" start="2025-05-23T11:41:44.188372" elapsed="0.373720"/>
-</kw>
-<status status="PASS" start="2025-05-23T11:41:41.081235" elapsed="3.481031"/>
-</kw>
-<kw name="Go To &quot;Home&quot; Page" owner="EezyApp">
-<kw name="Navigate To Eezy Website" owner="HomePage">
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:41:44.563346" level="INFO">Opening url 'https://extranet.extraajat.com/'</msg>
-<arg>${URL}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-05-23T11:41:44.563212" elapsed="0.977069"/>
-</kw>
-<status status="PASS" start="2025-05-23T11:41:44.562991" elapsed="0.977488"/>
-</kw>
-<kw name="Verify HomePage Loaded" owner="HomePage">
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${HOME_HEADER_LABEL}</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-05-23T11:41:45.541118" elapsed="0.367504"/>
-</kw>
-<status status="PASS" start="2025-05-23T11:41:45.540750" elapsed="0.368019"/>
-</kw>
-<status status="PASS" start="2025-05-23T11:41:44.562662" elapsed="1.346166"/>
-</kw>
-<kw name="Login With InValid Credentials" owner="EezyApp">
-<kw name="Login With InValid Credentials" owner="LoginProcess">
+<kw name="Login With Valid Credentials" owner="EezyApp">
+<kw name="Login With Valid Credentials" owner="LoginProcess">
 <kw name="Fill &quot;Username&quot; Field" owner="LoginProcess">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:41:45.910195" level="INFO">Typing text 'emp_46000' into text field 'name=_username'.</msg>
+<msg time="2025-06-02T16:12:41.290219" level="INFO">Typing text 'emp_46409' into text field 'name=_username'.</msg>
 <arg>${SIGNIN_USERNAME_TEXTBOX}</arg>
 <arg>${Username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-23T11:41:45.909992" elapsed="1.237988"/>
+<status status="PASS" start="2025-06-02T16:12:41.289907" elapsed="1.241415"/>
 </kw>
 <arg>${Username}</arg>
-<status status="PASS" start="2025-05-23T11:41:45.909769" elapsed="1.238357"/>
+<status status="PASS" start="2025-06-02T16:12:41.289554" elapsed="1.241999"/>
 </kw>
 <kw name="Fill &quot;Password&quot; Field" owner="LoginProcess">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:41:47.148989" level="INFO">Typing text 'zoya0000' into text field 'id=password'.</msg>
+<msg time="2025-06-02T16:12:42.532637" level="INFO">Typing text 'zoya1234' into text field 'id=password'.</msg>
 <arg>${SIGNIN_PASSWORD_TEXTBOX}</arg>
 <arg>${Password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-23T11:41:47.148660" elapsed="1.139927"/>
+<status status="PASS" start="2025-06-02T16:12:42.532332" elapsed="1.149978"/>
 </kw>
 <arg>${Password}</arg>
-<status status="PASS" start="2025-05-23T11:41:47.148322" elapsed="1.140495"/>
+<status status="PASS" start="2025-06-02T16:12:42.531861" elapsed="1.150615"/>
 </kw>
 <kw name="Click &quot;Login&quot; Button" owner="LoginProcess">
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-05-23T11:41:48.289561" level="INFO">Clicking button 'name=login'.</msg>
+<msg time="2025-06-02T16:12:43.683241" level="INFO">Clicking button 'name=login'.</msg>
 <arg>${SIGNIN_SUBMIT_BUTTON}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-05-23T11:41:48.289366" elapsed="1.837631"/>
+<status status="PASS" start="2025-06-02T16:12:43.683011" elapsed="2.820452"/>
 </kw>
-<status status="PASS" start="2025-05-23T11:41:48.289089" elapsed="1.838055"/>
-</kw>
-<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>${SIGNIN_ERROR_MESSAGE_1}</arg>
-<doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-05-23T11:41:50.127305" elapsed="0.367389"/>
+<status status="PASS" start="2025-06-02T16:12:43.682700" elapsed="2.820954"/>
 </kw>
 <arg>${Username}</arg>
 <arg>${Password}</arg>
-<status status="PASS" start="2025-05-23T11:41:45.909505" elapsed="4.585355"/>
+<status status="PASS" start="2025-06-02T16:12:41.289059" elapsed="5.214699"/>
 </kw>
-<arg>${INVALID_USERNAME}</arg>
-<arg>${INVALID_PASSWORD}</arg>
-<status status="PASS" start="2025-05-23T11:41:45.909140" elapsed="4.585807"/>
+<kw name="Verify Employee Username Loaded" owner="Header">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${EMPLOYEE_USERNAME}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-06-02T16:12:46.504432" elapsed="0.362595"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:12:46.504042" elapsed="0.363130"/>
+</kw>
+<arg>${VALID_USERNAME}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<status status="PASS" start="2025-06-02T16:12:41.288511" elapsed="5.578727"/>
+</kw>
+<kw name="Verify Logo Link Redirection" owner="EezyApp">
+<kw name="Click Logo Link" owner="Header">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:12:46.868394" level="INFO">Clicking element 'class=logo-default'.</msg>
+<arg>${LOGO_LINK_SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-02T16:12:46.868198" elapsed="1.284410"/>
+</kw>
+<doc>Click the logo link in the header</doc>
+<status status="PASS" start="2025-06-02T16:12:46.867953" elapsed="1.284817"/>
+</kw>
+<kw name="Verify Logo Redirection" owner="Header">
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:12:48.511582" level="INFO">Current location is 'https://extranet.extraajat.com/tt/'.</msg>
+<arg>${URL_Link}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-06-02T16:12:48.153345" elapsed="0.358404"/>
+</kw>
+<doc>Verify redirection to the correct URL after clicking the logo</doc>
+<status status="PASS" start="2025-06-02T16:12:48.153025" elapsed="0.358859"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:12:46.867616" elapsed="1.644349"/>
 </kw>
 <kw name="End Web Test" owner="CommonFeature" type="TEARDOWN">
 <kw name="Close All Browsers" owner="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2025-05-23T11:41:50.495608" elapsed="2.605770"/>
+<status status="PASS" start="2025-06-02T16:12:48.519754" elapsed="4.228332"/>
 </kw>
-<status status="PASS" start="2025-05-23T11:41:50.495336" elapsed="2.606245"/>
+<status status="PASS" start="2025-06-02T16:12:48.519307" elapsed="4.229022"/>
 </kw>
-<doc>Testing: User given invalid credentials</doc>
-<tag>1005 Negative Login Invalid Credentials</tag>
-<status status="PASS" start="2025-05-23T11:41:41.080227" elapsed="12.021626"/>
+<doc>Testing: Verify redirection when clicking the logo link</doc>
+<tag>1002 Smoke Header</tag>
+<status status="PASS" start="2025-06-02T16:12:36.562529" elapsed="16.186017"/>
+</test>
+<test id="s1-t3" name="Verify Notification Bell Dropdown Visible" line="30">
+<kw name="Begin Web Test" owner="CommonFeature" type="SETUP">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.35s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-06-02T16:12:52.750770" elapsed="0.000241"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-06-02T16:12:52.751169" elapsed="0.000176"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:12:52.751635" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-02T16:12:52.751473" elapsed="2.714639"/>
+</kw>
+<kw name="Set Window Position" owner="SeleniumLibrary">
+<arg>x=341</arg>
+<arg>y=75</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" start="2025-06-02T16:12:55.466410" elapsed="0.382514"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>width=1150</arg>
+<arg>height=910</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2025-06-02T16:12:55.849252" elapsed="0.386658"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:12:52.750458" elapsed="3.485656"/>
+</kw>
+<kw name="Go To &quot;Home&quot; Page" owner="EezyApp">
+<kw name="Navigate To Eezy Website" owner="HomePage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:12:56.237332" level="INFO">Opening url 'https://extranet.extraajat.com/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-06-02T16:12:56.237164" elapsed="0.990064"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:12:56.236905" elapsed="0.990543"/>
+</kw>
+<kw name="Verify HomePage Loaded" owner="HomePage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${HOME_HEADER_LABEL}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-06-02T16:12:57.228141" elapsed="0.364276"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:12:57.227766" elapsed="0.364813"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:12:56.236528" elapsed="1.356127"/>
+</kw>
+<kw name="Login With Valid Credentials" owner="EezyApp">
+<kw name="Login With Valid Credentials" owner="LoginProcess">
+<kw name="Fill &quot;Username&quot; Field" owner="LoginProcess">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:12:57.594176" level="INFO">Typing text 'emp_46409' into text field 'name=_username'.</msg>
+<arg>${SIGNIN_USERNAME_TEXTBOX}</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-02T16:12:57.593974" elapsed="5.229065"/>
+</kw>
+<arg>${Username}</arg>
+<status status="PASS" start="2025-06-02T16:12:57.593736" elapsed="5.229519"/>
+</kw>
+<kw name="Fill &quot;Password&quot; Field" owner="LoginProcess">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:13:02.824245" level="INFO">Typing text 'zoya1234' into text field 'id=password'.</msg>
+<arg>${SIGNIN_PASSWORD_TEXTBOX}</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-02T16:13:02.823953" elapsed="1.142699"/>
+</kw>
+<arg>${Password}</arg>
+<status status="PASS" start="2025-06-02T16:13:02.823519" elapsed="1.143321"/>
+</kw>
+<kw name="Click &quot;Login&quot; Button" owner="LoginProcess">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:13:03.969577" level="INFO">Clicking button 'name=login'.</msg>
+<arg>${SIGNIN_SUBMIT_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-02T16:13:03.969300" elapsed="2.777678"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:03.968910" elapsed="2.781901"/>
+</kw>
+<arg>${Username}</arg>
+<arg>${Password}</arg>
+<status status="PASS" start="2025-06-02T16:12:57.593451" elapsed="9.157460"/>
+</kw>
+<kw name="Verify Employee Username Loaded" owner="Header">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${EMPLOYEE_USERNAME}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-06-02T16:13:06.751468" elapsed="0.440305"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:06.751158" elapsed="0.440835"/>
+</kw>
+<arg>${VALID_USERNAME}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<status status="PASS" start="2025-06-02T16:12:57.593015" elapsed="9.599081"/>
+</kw>
+<kw name="Verify Notification Bell Dropdown Visible" owner="EezyApp">
+<kw name="Click Notification Bell Icon" owner="Header">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:13:07.208661" level="INFO">Clicking element 'class=icon-bell'.</msg>
+<arg>${NOTIFICATION_BELL_ICON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-02T16:13:07.208361" elapsed="0.879923"/>
+</kw>
+<doc>Click the notification bell icon in the header</doc>
+<status status="PASS" start="2025-06-02T16:13:07.208032" elapsed="0.880462"/>
+</kw>
+<kw name="Verify Notification Bell Dropdown Visible" owner="Header">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${NOTIFICATION_DROPDOWN}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-02T16:13:08.089197" elapsed="0.986367"/>
+</kw>
+<doc>Verify that the dropdown is visible after clicking the notification bell icon</doc>
+<status status="PASS" start="2025-06-02T16:13:08.088812" elapsed="0.986955"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:07.207584" elapsed="1.868277"/>
+</kw>
+<kw name="End Web Test" owner="CommonFeature" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-06-02T16:13:09.126020" elapsed="4.344379"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:09.125613" elapsed="4.344995"/>
+</kw>
+<doc>Testing: Verify dropdown visibility after clicking the notification bell icon</doc>
+<tag>1003 Smoke Header</tag>
+<status status="PASS" start="2025-06-02T16:12:52.749754" elapsed="20.721201"/>
+</test>
+<test id="s1-t4" name="Verify Image Visibility" line="37">
+<kw name="Begin Web Test" owner="CommonFeature" type="SETUP">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.35s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-06-02T16:13:13.472405" elapsed="0.000184"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-06-02T16:13:13.472698" elapsed="0.000130"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:13:13.473099" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-02T16:13:13.472948" elapsed="2.536554"/>
+</kw>
+<kw name="Set Window Position" owner="SeleniumLibrary">
+<arg>x=341</arg>
+<arg>y=75</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" start="2025-06-02T16:13:16.009822" elapsed="0.385235"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>width=1150</arg>
+<arg>height=910</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2025-06-02T16:13:16.395376" elapsed="0.392396"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:13.472146" elapsed="3.315795"/>
+</kw>
+<kw name="Go To &quot;Home&quot; Page" owner="EezyApp">
+<kw name="Navigate To Eezy Website" owner="HomePage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:13:16.789011" level="INFO">Opening url 'https://extranet.extraajat.com/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-06-02T16:13:16.788881" elapsed="0.916392"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:16.788664" elapsed="0.916765"/>
+</kw>
+<kw name="Verify HomePage Loaded" owner="HomePage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${HOME_HEADER_LABEL}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-06-02T16:13:17.705953" elapsed="0.361165"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:17.705660" elapsed="0.361620"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:16.788335" elapsed="1.279018"/>
+</kw>
+<kw name="Login With Valid Credentials" owner="EezyApp">
+<kw name="Login With Valid Credentials" owner="LoginProcess">
+<kw name="Fill &quot;Username&quot; Field" owner="LoginProcess">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:13:18.068728" level="INFO">Typing text 'emp_46409' into text field 'name=_username'.</msg>
+<arg>${SIGNIN_USERNAME_TEXTBOX}</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-02T16:13:18.068525" elapsed="1.302901"/>
+</kw>
+<arg>${Username}</arg>
+<status status="PASS" start="2025-06-02T16:13:18.068297" elapsed="1.303307"/>
+</kw>
+<kw name="Fill &quot;Password&quot; Field" owner="LoginProcess">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:13:19.372456" level="INFO">Typing text 'zoya1234' into text field 'id=password'.</msg>
+<arg>${SIGNIN_PASSWORD_TEXTBOX}</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-02T16:13:19.372209" elapsed="1.144402"/>
+</kw>
+<arg>${Password}</arg>
+<status status="PASS" start="2025-06-02T16:13:19.371835" elapsed="1.145002"/>
+</kw>
+<kw name="Click &quot;Login&quot; Button" owner="LoginProcess">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:13:20.517644" level="INFO">Clicking button 'name=login'.</msg>
+<arg>${SIGNIN_SUBMIT_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-02T16:13:20.517414" elapsed="1.830033"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:20.517093" elapsed="1.830545"/>
+</kw>
+<arg>${Username}</arg>
+<arg>${Password}</arg>
+<status status="PASS" start="2025-06-02T16:13:18.068033" elapsed="4.279695"/>
+</kw>
+<kw name="Verify Employee Username Loaded" owner="Header">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${EMPLOYEE_USERNAME}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-06-02T16:13:22.349254" elapsed="1.037332"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:22.348000" elapsed="1.038759"/>
+</kw>
+<arg>${VALID_USERNAME}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<status status="PASS" start="2025-06-02T16:13:18.067671" elapsed="5.319167"/>
+</kw>
+<kw name="Verify Image Visibility" owner="EezyApp">
+<kw name="Verify Image Is Visible" owner="Header">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${EMPLOYEE_IMAGE_XPATH}</arg>
+<arg>timeout=20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-06-02T16:13:23.387696" elapsed="0.739158"/>
+</kw>
+<doc>Verify that the image is visible on the page</doc>
+<status status="PASS" start="2025-06-02T16:13:23.387496" elapsed="0.739534"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:23.387200" elapsed="0.739927"/>
+</kw>
+<kw name="End Web Test" owner="CommonFeature" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-06-02T16:13:24.127953" elapsed="2.593135"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:24.127630" elapsed="2.593641"/>
+</kw>
+<doc>Testing: Verify that the image is visible on the page</doc>
+<tag>1004 Smoke Header</tag>
+<status status="PASS" start="2025-06-02T16:13:13.471678" elapsed="13.262054"/>
+</test>
+<test id="s1-t5" name="Verify Logo Redirection Negative" line="44">
+<kw name="Begin Web Test" owner="CommonFeature" type="SETUP">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.35s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-06-02T16:13:26.736171" elapsed="0.000270"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-06-02T16:13:26.736632" elapsed="0.000226"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:13:26.737260" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-02T16:13:26.737044" elapsed="2.879183"/>
+</kw>
+<kw name="Set Window Position" owner="SeleniumLibrary">
+<arg>x=341</arg>
+<arg>y=75</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" start="2025-06-02T16:13:29.616534" elapsed="0.384955"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>width=1150</arg>
+<arg>height=910</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2025-06-02T16:13:30.001796" elapsed="0.394709"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:26.735814" elapsed="3.660860"/>
+</kw>
+<kw name="Go To &quot;Home&quot; Page" owner="EezyApp">
+<kw name="Navigate To Eezy Website" owner="HomePage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:13:30.397730" level="INFO">Opening url 'https://extranet.extraajat.com/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-06-02T16:13:30.397597" elapsed="0.974928"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:30.397387" elapsed="0.975299"/>
+</kw>
+<kw name="Verify HomePage Loaded" owner="HomePage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${HOME_HEADER_LABEL}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-06-02T16:13:31.373227" elapsed="0.363025"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:31.372919" elapsed="0.363572"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:30.397066" elapsed="1.339535"/>
+</kw>
+<kw name="Login With Valid Credentials" owner="EezyApp">
+<kw name="Login With Valid Credentials" owner="LoginProcess">
+<kw name="Fill &quot;Username&quot; Field" owner="LoginProcess">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:13:31.738537" level="INFO">Typing text 'emp_46409' into text field 'name=_username'.</msg>
+<arg>${SIGNIN_USERNAME_TEXTBOX}</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-02T16:13:31.738342" elapsed="1.276750"/>
+</kw>
+<arg>${Username}</arg>
+<status status="PASS" start="2025-06-02T16:13:31.738100" elapsed="1.277197"/>
+</kw>
+<kw name="Fill &quot;Password&quot; Field" owner="LoginProcess">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:13:33.016291" level="INFO">Typing text 'zoya1234' into text field 'id=password'.</msg>
+<arg>${SIGNIN_PASSWORD_TEXTBOX}</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-02T16:13:33.015999" elapsed="1.150661"/>
+</kw>
+<arg>${Password}</arg>
+<status status="PASS" start="2025-06-02T16:13:33.015557" elapsed="1.151262"/>
+</kw>
+<kw name="Click &quot;Login&quot; Button" owner="LoginProcess">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:13:34.167503" level="INFO">Clicking button 'name=login'.</msg>
+<arg>${SIGNIN_SUBMIT_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-02T16:13:34.167302" elapsed="2.963342"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:34.167022" elapsed="2.963829"/>
+</kw>
+<arg>${Username}</arg>
+<arg>${Password}</arg>
+<status status="PASS" start="2025-06-02T16:13:31.737817" elapsed="5.393134"/>
+</kw>
+<kw name="Verify Employee Username Loaded" owner="Header">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${EMPLOYEE_USERNAME}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-06-02T16:13:37.131683" elapsed="0.371193"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:37.131266" elapsed="0.371776"/>
+</kw>
+<arg>${VALID_USERNAME}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<status status="PASS" start="2025-06-02T16:13:31.737447" elapsed="5.765673"/>
+</kw>
+<kw name="Verify Logo Redirection Negative" owner="EezyApp">
+<kw name="Click Logo Link" owner="Header">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:13:37.504313" level="INFO">Clicking element 'class=logo-default'.</msg>
+<arg>${LOGO_LINK_SELECTOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-02T16:13:37.504120" elapsed="1.300458"/>
+</kw>
+<doc>Click the logo link in the header</doc>
+<status status="PASS" start="2025-06-02T16:13:37.503882" elapsed="1.300881"/>
+</kw>
+<kw name="Verify Logo Redirection Negative" owner="Header">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:13:39.645170" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-06-02T16:13:39.645426" level="FAIL">Location should have been 'https://eezy.fi/' but was 'https://extranet.extraajat.com/tt/'.</msg>
+<arg>${INCORRECT_URL_Link}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="FAIL" start="2025-06-02T16:13:38.805671" elapsed="0.935587">Location should have been 'https://eezy.fi/' but was 'https://extranet.extraajat.com/tt/'.</status>
+</kw>
+<msg time="2025-06-02T16:13:39.741499" level="INFO">${status} = False</msg>
+<var>${status}</var>
+<arg>SeleniumLibrary.Location Should Be</arg>
+<arg>${INCORRECT_URL_Link}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2025-06-02T16:13:38.805437" elapsed="0.936117"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${status}</arg>
+<arg>Fail</arg>
+<arg>Redirection happened to the incorrect URL</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-06-02T16:13:39.741790" elapsed="0.000237"/>
+</kw>
+<doc>Verify that the redirection does not happen to the incorrect URL</doc>
+<status status="PASS" start="2025-06-02T16:13:38.805053" elapsed="0.937123"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:37.503515" elapsed="2.238765"/>
+</kw>
+<kw name="End Web Test" owner="CommonFeature" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-06-02T16:13:39.761352" elapsed="9.138449"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:39.760841" elapsed="9.139194"/>
+</kw>
+<doc>Testing: Verify that redirection does not happen to the correct URL</doc>
+<tag>1005 Negative Header</tag>
+<status status="PASS" start="2025-06-02T16:13:26.734979" elapsed="22.165388"/>
+</test>
+<test id="s1-t6" name="Verify Notification Bell Dropdown Not Visible" line="51">
+<kw name="Begin Web Test" owner="CommonFeature" type="SETUP">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.35s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-06-02T16:13:48.902199" elapsed="0.000199"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2025-06-02T16:13:48.902517" elapsed="0.000152"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:13:48.902954" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-06-02T16:13:48.902794" elapsed="2.848092"/>
+</kw>
+<kw name="Set Window Position" owner="SeleniumLibrary">
+<arg>x=341</arg>
+<arg>y=75</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" start="2025-06-02T16:13:51.751211" elapsed="0.376426"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>width=1150</arg>
+<arg>height=910</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2025-06-02T16:13:52.127936" elapsed="0.391337"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:48.901940" elapsed="3.617535"/>
+</kw>
+<kw name="Go To &quot;Home&quot; Page" owner="EezyApp">
+<kw name="Navigate To Eezy Website" owner="HomePage">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:13:52.520608" level="INFO">Opening url 'https://extranet.extraajat.com/'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-06-02T16:13:52.520466" elapsed="0.927047"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:52.520206" elapsed="0.927532"/>
+</kw>
+<kw name="Verify HomePage Loaded" owner="HomePage">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${HOME_HEADER_LABEL}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-06-02T16:13:53.448260" elapsed="0.361300"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:53.447992" elapsed="0.361732"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:52.519877" elapsed="1.289922"/>
+</kw>
+<kw name="Login With Valid Credentials" owner="EezyApp">
+<kw name="Login With Valid Credentials" owner="LoginProcess">
+<kw name="Fill &quot;Username&quot; Field" owner="LoginProcess">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:13:53.811240" level="INFO">Typing text 'emp_46409' into text field 'name=_username'.</msg>
+<arg>${SIGNIN_USERNAME_TEXTBOX}</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-02T16:13:53.811053" elapsed="1.218592"/>
+</kw>
+<arg>${Username}</arg>
+<status status="PASS" start="2025-06-02T16:13:53.810839" elapsed="1.218994"/>
+</kw>
+<kw name="Fill &quot;Password&quot; Field" owner="LoginProcess">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:13:55.030648" level="INFO">Typing text 'zoya1234' into text field 'id=password'.</msg>
+<arg>${SIGNIN_PASSWORD_TEXTBOX}</arg>
+<arg>${Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-02T16:13:55.030415" elapsed="1.175362"/>
+</kw>
+<arg>${Password}</arg>
+<status status="PASS" start="2025-06-02T16:13:55.030064" elapsed="1.175977"/>
+</kw>
+<kw name="Click &quot;Login&quot; Button" owner="LoginProcess">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:13:56.207026" level="INFO">Clicking button 'name=login'.</msg>
+<arg>${SIGNIN_SUBMIT_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-06-02T16:13:56.206755" elapsed="2.789857"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:56.206376" elapsed="2.790415"/>
+</kw>
+<arg>${Username}</arg>
+<arg>${Password}</arg>
+<status status="PASS" start="2025-06-02T16:13:53.810540" elapsed="5.186326"/>
+</kw>
+<kw name="Verify Employee Username Loaded" owner="Header">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${EMPLOYEE_USERNAME}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-06-02T16:13:58.997411" elapsed="0.366052"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:58.997103" elapsed="0.366530"/>
+</kw>
+<arg>${VALID_USERNAME}</arg>
+<arg>${VALID_PASSWORD}</arg>
+<status status="PASS" start="2025-06-02T16:13:53.810142" elapsed="5.553567"/>
+</kw>
+<kw name="Verify Notification Bell Dropdown Not Visible" owner="EezyApp">
+<kw name="Verify Notification Bell Dropdown Not Visible" owner="Header">
+<kw name="Element Should Not Be Visible" owner="SeleniumLibrary">
+<msg time="2025-06-02T16:14:00.087715" level="INFO">Element 'xpath=//*[@id="header_notification_bar"]/ul' exists but is not displayed.</msg>
+<arg>${NOTIFICATION_DROPDOWN}</arg>
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<status status="PASS" start="2025-06-02T16:13:59.364574" elapsed="0.723347"/>
+</kw>
+<doc>Verify that the dropdown is not visible when the notification bell icon is not clicked</doc>
+<status status="PASS" start="2025-06-02T16:13:59.364381" elapsed="0.723783"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:13:59.364086" elapsed="0.724203"/>
+</kw>
+<kw name="End Web Test" owner="CommonFeature" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-06-02T16:14:00.089157" elapsed="2.611347"/>
+</kw>
+<status status="PASS" start="2025-06-02T16:14:00.088879" elapsed="2.611796"/>
+</kw>
+<doc>Testing: Verify that the dropdown is not visible when the notification bell icon is not clicked</doc>
+<tag>1006 Negative Header</tag>
+<status status="PASS" start="2025-06-02T16:13:48.901343" elapsed="13.800629"/>
 </test>
 <doc>Login Process Testing</doc>
-<status status="PASS" start="2025-05-23T11:40:47.438450" elapsed="65.664745"/>
+<status status="PASS" start="2025-06-02T16:12:23.063522" elapsed="99.639316"/>
 </suite>
 <statistics>
 <total>
-<stat pass="5" fail="0" skip="0">All Tests</stat>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 <stat pass="1" fail="0" skip="0">1001 Smoke Login</stat>
-<stat pass="1" fail="0" skip="0">1002 Negative Login Username missing</stat>
-<stat pass="1" fail="0" skip="0">1003 Negative Login Password missing</stat>
-<stat pass="1" fail="0" skip="0">1004 Both Password and Usermname are empty</stat>
-<stat pass="1" fail="0" skip="0">1005 Negative Login Invalid Credentials</stat>
+<stat pass="1" fail="0" skip="0">1002 Smoke Header</stat>
+<stat pass="1" fail="0" skip="0">1003 Smoke Header</stat>
+<stat pass="1" fail="0" skip="0">1004 Smoke Header</stat>
+<stat pass="1" fail="0" skip="0">1005 Negative Header</stat>
+<stat pass="1" fail="0" skip="0">1006 Negative Header</stat>
 </tag>
 <suite>
-<stat name="LoginProcess" id="s1" pass="5" fail="0" skip="0">LoginProcess</stat>
+<stat name="Header" id="s1" pass="6" fail="0" skip="0">Header</stat>
 </suite>
 </statistics>
 <errors>
