@@ -2,6 +2,8 @@
 Resource    ../Resources/PO/HomePage.robot
 Resource    ../Resources/PO/LoginProcess.robot
 Resource    ../Resources/PO/EmployeePage/Header.robot
+resource    ../Resources/PO/EmployeePage/Footer.robot
+
 
 *** Variables ***
 
@@ -62,7 +64,6 @@ Login With InValid Credentials
     LoginProcess.Login With InValid Credentials    ${Username}     ${Password}
 
 #EmployeePage Testing - Header section
-
 Verify Logo Link Redirection
     Header.Click Logo Link
     Header.Verify Logo Redirection
@@ -81,4 +82,31 @@ Verify Logo Redirection Negative
 Verify Notification Bell Dropdown Not Visible
     Header.Verify Notification Bell Dropdown Not Visible
 
+#EmployeePage Testing - Footer section
+Verify Footer Heading 1 and contents are loaded
+    Footer.Verify Footer Heading Text 1 is loaded
+    Footer.Verify Footer Heading Text 1 content is loaded
 
+Verify Footer Heading 2 and contents are loaded
+    Footer.Verify Footer Heading Text 2 is loaded
+    Footer.Verify Footer Heading Text 3 Logo contents is loaded
+
+Verify Footer Heading 3 and contents are loaded
+    Footer.Verify Footer Heading Text 3 is loaded
+    Footer.Verify Footer Heading Text 4 Contents is loaded
+    
+Verify Facebook Logo Link Redirection
+    Footer.Click Facebook Logo Link And Verify Redirection to correct Facebook Page
+
+Verify Twitter Logo Link Redirection
+    Footer.Click Twitter Logo Link And Verify Redirection to correct Twitter Page
+
+Verify LinkedIN Logo Link Redirection
+    Footer.Click LinkedIN Logo Link And Verify Redirection to correct LinkedIN Page
+
+Verify Youtube Logo Link Redirection
+    Footer.Click Youtube Logo Link And Verify Redirection to correct Youtube Page
+
+Verify Footer Heading 4 and contents are loaded
+    Footer.Verify Footer Heading Text 4 is loaded
+    Footer.Verify Footer Heading Text 4 Contents is loaded

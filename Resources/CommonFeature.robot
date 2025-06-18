@@ -12,8 +12,8 @@ Begin Web Test
     open browser                about:blank     ${BROWSER}          #Launhing website in chrome browser
 
     #resize browser window for recording
-    set window position         x=341           y=75              #In which size mode website launh
-    set window size             width=1150      height=910         #Tests will execute with mentioned window size
+    set window position         x=341           y=75                #In which size mode website launh
+    set window size             width=1150      height=910          #Tests will execute with mentioned window size
 
 
 End Web Test

@@ -54,4 +54,3 @@ Verify Notification Bell Dropdown Not Visible
     EezyApp.Go To "Home" Page
     EezyApp.Login With Valid Credentials     ${VALID_USERNAME}    ${VALID_PASSWORD}
     EezyApp.Verify Notification Bell Dropdown Not Visible
-
